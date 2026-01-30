@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background | Dr. Aarti Pyati, Ph.D.</title>
+    <meta name="description" content="Learn about Dr. Pyati's education, training, and professional experience as a clinical psychologist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 800px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--blush);
+        }
+        .timeline-item {
+            padding-left: 2.5rem;
+            padding-bottom: 2.5rem;
+            position: relative;
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .timeline-item h4 {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--deep-brown);
+        }
+        .timeline-item p {
+            color: var(--deep-brown);
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+        .education-card {
+            background: var(--soft-white);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--gold);
+        }
+        .education-card h3 {
+            font-family: var(--font-serif);
+            color: var(--deep-brown);
+            margin-bottom: 0.5rem;
+        }
+        .education-card .institution {
+            color: var(--gold);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .diversity-list {
+            max-width: 700px;
+            margin: 0 auto;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0;
+        }
+        .diversity-list li {
+            padding: 1rem 1.5rem;
+            color: var(--deep-brown);
+            font-size: 1.1rem;
+            font-weight: 400;
+            border-bottom: 1px solid rgba(207, 168, 77, 0.3);
+            position: relative;
+            padding-left: 2rem;
+        }
+        .diversity-list li::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 1.45rem;
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .diversity-list li:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+        @media (max-width: 600px) {
+            .diversity-list {
+                grid-template-columns: 1fr;
+            }
+            .diversity-list li:last-child {
+                border-bottom: none;
+            }
+            .diversity-list li:nth-last-child(2) {
+                border-bottom: 1px solid rgba(207, 168, 77, 0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                Aarti Pyati, Ph.D.
+                <span>Clinical Psychologist</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">My Approach</a>
+                <a href="background.html" class="active">Background</a>
+                <a href="services.html">Services</a>
+                <a href="appointments.html">Appointments</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html" class="nav-cta">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-content">
+        <h1>Background</h1>
+    </section>
+
+    <!-- Experience Overview -->
+    <section class="section">
+        <div class="container-narrow">
+            <p class="lead" style="font-size: 1.25rem; text-align: center;">In my many years providing therapeutic services to individuals, couples, and groups, I have had the privilege of working with a diversity of backgrounds, identities, and ages on a wide range of concerns.</p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Education & Research</h2>
+            <div class="two-col" style="gap: 2rem;">
+                <div class="education-card">
+                    <h3>Doctorate & Undergraduate</h3>
+                    <p class="institution">University of Chicago</p>
+                    <p>My doctoral program focused both on individual human development and on the intersection of our individual selves with the environment around us. I studied the stages of our lifespan and the potential challenges and growth inherent in each stage, as well as how each of us is influenced by those around us &ndash; our family, community, society, and our culture.</p>
+                </div>
+                <div class="education-card">
+                    <h3>Research</h3>
+                    <p class="institution">NIMH Fellowship</p>
+                    <p>My academic research echoes the theme of self and culture with research conducted both here in the U.S. and fieldwork funded by an NIMH-fellowship to conduct cross-cultural research in a psychiatric facility in India.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Experience -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="text-align: center; margin-bottom: 2.5rem;">Clinical Experience</h2>
+            <div class="timeline" style="max-width: 600px; margin: 0 auto;">
+                <div class="timeline-item">
+                    <h4>Case Western Reserve University</h4>
+                    <p>14 years as therapist for university students, associate director, and training director. Structured policy, contributed to departmental oversight, and collaborated with other departments. Oversaw training programs, facilitated didactic programs, and supervised trainees on clinical practice.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Miami University, Oxford, OH</h4>
+                    <p>Clinical training and practice.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Chicago, IL Institutions</h4>
+                    <p>Initial training and clinical work across several institutions.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>CWRU Department of Psychology</h4>
+                    <p>Adjunct assistant professor. Supervised psychology students and taught courses on diversity for the department. (Ongoing)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Populations Served -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Diverse Populations</h2>
+            <p style="max-width: 700px; margin: 0 auto 2rem; color: var(--deep-brown);">Over the course of my academic and clinical experience, I have had the great honor to work with individuals from:</p>
+            <ul class="diversity-list">
+                <li>A range of religious orientations</li>
+                <li>Various socioeconomic backgrounds</li>
+                <li>Diverse cultures and countries</li>
+                <li>Different sexual and gender identities</li>
+                <li>Various neuro-abilities</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Framework -->
+    <section class="section">
+        <div class="container-narrow">
+            <div class="highlight-box" style="border-left: 4px solid var(--gold); padding: 2.5rem;">
+                <h3 style="margin-bottom: 1rem;">My Framework as a Therapist</h3>
+                <p style="margin-bottom: 1rem;">Taken together, my academic, research, and clinical backgrounds have shaped my framework as a therapist. As I consider each client as an individual, I am also actively considering how each person is shaped by family, community, and overarching cultural expectations and values.</p>
+                <p style="margin-bottom: 1rem;">I pay attention to what many of us experience as that elusive line between feeling like an individual and feeling like an outsider; or, the line between belonging and conforming. Many of us revisit these themes, among others, as we develop through different stages of our lives.</p>
+                <p style="margin-bottom: 0;">Much of my practice with clients involves fundamental themes such as these, even as we work on anxiety, depression, or traumatic events that may initially have been the catalyst to seek therapy services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--deep-brown); color: var(--soft-white); text-align: center;">
+        <div class="container-narrow">
+            <a href="contact.html" class="btn btn-primary">Contact for Availability</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo">
+                    Aarti Pyati, Ph.D.
+                    <span>Clinical Psychologist</span>
+                </div>
+                <p>Licensed Clinical Psychologist<br>Beachwood, Ohio</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">My Approach</a></li>
+                    <li><a href="background.html">Background</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>21403 Chagrin Blvd.<br>Suite 110<br>Beachwood, OH 44122</p>
+                <p><a href="tel:4408363618">(440) 836-3618</a></p>
+                <p><a href="mailto:pyatiphd@gmail.com">pyatiphd@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dr. Aarti Pyati, Ph.D. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="nav.js"></script>
+</body>
+</html>

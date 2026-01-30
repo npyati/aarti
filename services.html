@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Dr. Aarti Pyati, Ph.D.</title>
+    <meta name="description" content="Individual therapy, couples therapy, and group therapy services offered by Dr. Aarti Pyati in Beachwood, Ohio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .therapy-topics {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0 3rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        .therapy-topics li {
+            padding: 1rem 0;
+            color: var(--deep-brown);
+            font-size: 1.05rem;
+            font-weight: 400;
+            border-bottom: 1px solid var(--blush);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .therapy-topics li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.4rem;
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+        .therapy-topics li:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+        @media (max-width: 600px) {
+            .therapy-topics {
+                grid-template-columns: 1fr;
+            }
+            .therapy-topics li:last-child {
+                border-bottom: none;
+            }
+            .therapy-topics li:nth-last-child(2) {
+                border-bottom: 1px solid var(--blush);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                Aarti Pyati, Ph.D.
+                <span>Clinical Psychologist</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">My Approach</a>
+                <a href="background.html">Background</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="appointments.html">Appointments</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html" class="nav-cta">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-content">
+        <h1>Therapy Options</h1>
+    </section>
+
+    <!-- Individual Therapy -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Individual Therapy</h2>
+            <p>This form of treatment provides a customized approach to what you are experiencing. The goal is to utilize established theory and best practice in a manner that is personalized to your background and needs.</p>
+            <p>In this context, we can explore:</p>
+            <ul class="therapy-topics">
+                <li>Trauma</li>
+                <li>Depressed mood</li>
+                <li>Concerns related to substances</li>
+                <li>Anxious mood</li>
+                <li>Body image</li>
+                <li>Self-esteem</li>
+                <li>Desire to have improved connection in relationships</li>
+                <li>Grief</li>
+                <li>Exploration of career and life path</li>
+                <li>Other areas that may be surfacing for you</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Couples Therapy -->
+    <section class="section section-alt">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Couples Therapy</h2>
+            <p>Couples counseling can center on working towards a better relationship, identifying whether a relationship is viable, and/or working through the dissolution of a relationship.</p>
+            <p>When I work with couples, I consider the couple as the client. In other words, we work together to identify what the goals are for the work and then move forward as a team.</p>
+        </div>
+    </section>
+
+    <!-- Group Therapy -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Group Therapy</h2>
+            <p>This format is one of the best ways to take the work done in individual therapy to the next level. Working with other people who are going through a similar situation as you are can be a powerful way to propel you towards your goals.</p>
+            <p>Groups that I facilitate are both supportive and challenging, in that group members often share similar circumstances and can relate with each other, but they also encourage one another to take risks and be held accountable to their aims.</p>
+            <div class="highlight-box" style="margin: 2rem 0;">
+                <p>I have seen people achieve in a short-term group what might otherwise take far longer to accomplish in individual therapy.</p>
+            </div>
+            <h3>Potential group themes:</h3>
+            <ul class="therapy-topics" style="margin-top: 1rem;">
+                <li>Grief and Loss Support</li>
+                <li>Women's Empowerment</li>
+                <li>Interpersonal Relationships Group</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--deep-brown); color: var(--soft-white); text-align: center;">
+        <div class="container-narrow">
+            <a href="contact.html" class="btn btn-primary">Contact for Availability</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo">
+                    Aarti Pyati, Ph.D.
+                    <span>Clinical Psychologist</span>
+                </div>
+                <p>Licensed Clinical Psychologist<br>Beachwood, Ohio</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">My Approach</a></li>
+                    <li><a href="background.html">Background</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>21403 Chagrin Blvd.<br>Suite 110<br>Beachwood, OH 44122</p>
+                <p><a href="tel:4408363618">(440) 836-3618</a></p>
+                <p><a href="mailto:pyatiphd@gmail.com">pyatiphd@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dr. Aarti Pyati, Ph.D. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="nav.js"></script>
+</body>
+</html>
