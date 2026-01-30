@@ -822,7 +822,11 @@ p {
 
     .hero {
         min-height: auto;
-        padding: 4rem 5%;
+        padding: 8rem 5% 4rem;
+    }
+
+    .page-hero {
+        padding: 9rem 5% 3rem;
     }
 
     .cards-grid {
